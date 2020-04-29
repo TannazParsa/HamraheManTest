@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ReachabilitySwift (4.0-beta1)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - ReachabilitySwift (from `https://github.com/ashleymills/Reachability.swift`, branch `develop`)
+  - XLPagerTabStrip (~> 9.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - XLPagerTabStrip
+
+EXTERNAL SOURCES:
+  ReachabilitySwift:
+    :branch: develop
+    :git: https://github.com/ashleymills/Reachability.swift
+
+CHECKOUT OPTIONS:
+  ReachabilitySwift:
+    :commit: 6451cd109ef2e88a0763387de44668e17cb1b49e
+    :git: https://github.com/ashleymills/Reachability.swift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ReachabilitySwift: fa4416f5356466392a733d21b41873ebe052bf40
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: 53a6efab58488a39fbeade1615ebf3b662445ca8
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-HamraheManTest-HamraheManTestUITests/Pods-HamraheManTest-HamraheManTestUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework
+${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework
