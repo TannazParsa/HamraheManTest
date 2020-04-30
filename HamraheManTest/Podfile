@@ -12,7 +12,9 @@ target 'HamraheManTest' do
     pod 'Alamofire', '~> 4.7'
 
     #UI
-        pod 'XLPagerTabStrip', '~> 9.0'
+    pod 'Parchment'
+
+    
 
 
   target 'HamraheManTestTests' do
