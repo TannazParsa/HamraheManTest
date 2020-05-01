@@ -15,14 +15,15 @@ class CharactersVC: MainVC {
     @IBOutlet weak var tableView: UITableView!
     
     private var viewModel : CharactersVM!
-        
+    
+// MARK: ViewController LifeCycle
     override func viewDidLoad() {
         viewModel = CharactersVM(self)
         tableView.register(UINib(nibName: "CharacterTableViewCell", bundle: .main), forCellReuseIdentifier: "characterCell")
         refresh(self)
         
     }
-    
+// MARK: Get API Response
     func downloadData(_ page: Int) {
         if page == 1, viewModel.characters.count == 0 {
             view.lock()
@@ -31,11 +32,6 @@ class CharactersVC: MainVC {
         }
         viewModel.requestToGetCharacters(page)
     }
-    
-    func successToGetCharacters() {
-        tableView.reloadData()
-    }
-    
     override func refresh(_ sender: AnyObject) {
         super.refresh(sender)
         downloadData(1)
@@ -53,7 +49,14 @@ class CharactersVC: MainVC {
         downloadData(viewModel.page+1)
     }
     
+    // MARK: get Api Success
+     func successToGetCharacters() {
+         tableView.reloadData()
+     }
+    
 }
+// MARK: TableView DataSource/Delegate
+ 
 extension CharactersVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.characters.count
@@ -88,6 +91,7 @@ extension CharactersVC: CellHandlerDelegate {
     func characterAddedToFavorite(cell: CharacterTableViewCell) {
         guard let indexPath = tableView.indexPath(for: cell) else {return }
         let selectedCharacter = viewModel.characters[indexPath.row]
+        //remove character if in favorites now
         if let favorites = StoringData.favorites {
             if favorites.contains(where: { $0.id == selectedCharacter.id}) {
                for i in 0 ..< (favorites.count) {
@@ -98,6 +102,7 @@ extension CharactersVC: CellHandlerDelegate {
                 }
             }
         }
+        // add to favorites
         if StoringData.favorites == nil {
             StoringData.favorites = []
             StoringData.favorites?.append(selectedCharacter)

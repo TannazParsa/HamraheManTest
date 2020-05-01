@@ -286,19 +286,19 @@
 		9358F22B245A15CC00BF21C9 /* HamraheManTest */ = {
 			isa = PBXGroup;
 			children = (
-				932CF248245B191D00B8A38F /* Libraries */,
-				9358F25C245A1AC300BF21C9 /* Networking */,
-				932CF21D245AA67800B8A38F /* Models */,
-				932CF235245B153C00B8A38F /* ViewModel */,
-				932CF239245B165600B8A38F /* View */,
 				932CF229245AB7B200B8A38F /* Constants */,
 				932CF226245AB77900B8A38F /* Components */,
 				932CF221245AAAFD00B8A38F /* Helper */,
+				932CF248245B191D00B8A38F /* Libraries */,
+				9358F25C245A1AC300BF21C9 /* Networking */,
+				932CF21D245AA67800B8A38F /* Models */,
+				932CF239245B165600B8A38F /* View */,
+				932CF235245B153C00B8A38F /* ViewModel */,
+				93C35B3A245CDC0C00D0DF65 /* Storyboards */,
+				932CF21E245AA68800B8A38F /* Supporting Files */,
 				9358F22C245A15CC00BF21C9 /* AppDelegate.swift */,
 				9358F22E245A15CC00BF21C9 /* SceneDelegate.swift */,
 				9358F23A245A15D100BF21C9 /* Info.plist */,
-				9358F232245A15CC00BF21C9 /* Main.storyboard */,
-				932CF21E245AA68800B8A38F /* Supporting Files */,
 			);
 			path = HamraheManTest;
 			sourceTree = "<group>";
@@ -330,6 +330,14 @@
 				93C35B30245C7A4400D0DF65 /* WSEpisode.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		93C35B3A245CDC0C00D0DF65 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9358F232245A15CC00BF21C9 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		F4AE7D076DB6A951A919B061 /* Pods */ = {

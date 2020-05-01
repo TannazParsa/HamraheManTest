@@ -15,10 +15,12 @@ class CharacterMainVC: MainVC {
     
     @IBOutlet weak var vwMain: UIView!
         override func viewDidLoad() {
+            // MARK: add childs to Top tabbar
             let characterVC = Storyboards.main.instantiateViewController(withIdentifier: "charactersVC") as! CharactersVC
             characterVC.title = "Characters"
             let favoritesVC = Storyboards.main.instantiateViewController(withIdentifier: "favoritesVC") as! FavoritesVC
             favoritesVC.title = "Favorites"
+            // MARK: initianl Top tabbar
             let pagingViewController = PagingViewController(viewControllers: [
               characterVC,
               favoritesVC

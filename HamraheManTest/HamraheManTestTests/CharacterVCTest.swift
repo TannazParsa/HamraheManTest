@@ -19,7 +19,7 @@ class CharacterVCTest: XCTestCase {
         super.setUp()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        self.viewControllerUnderTest = storyboard.instantiateViewController(withIdentifier: "charactersVC") as! CharactersVC
+        self.viewControllerUnderTest = storyboard.instantiateViewController(withIdentifier: "charactersVC") as? CharactersVC
         
         self.viewControllerUnderTest.loadView()
         self.viewControllerUnderTest.viewDidLoad()
@@ -41,7 +41,7 @@ class CharacterVCTest: XCTestCase {
     
     func testTableViewConfromsToTableViewDelegateProtocol() {
         XCTAssertTrue(viewControllerUnderTest.conforms(to: UITableViewDelegate.self))
-        XCTAssertTrue(viewControllerUnderTest.responds(to: #selector(viewControllerUnderTest.tableView(_:didSelectRowAt:))))
+        XCTAssertTrue(viewControllerUnderTest.responds(to: #selector(viewControllerUnderTest.tableView(_:cellForRowAt:))))
     }
     
     func testTableViewHasDataSource() {
