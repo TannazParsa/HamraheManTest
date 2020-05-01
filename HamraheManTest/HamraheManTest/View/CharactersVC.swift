@@ -12,13 +12,22 @@ import UIKit
 
 class CharactersVC: UIViewController {
     
-    //var itemInfo = IndicatorInfo(title: "Characters")
-
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        tableView.register(UINib(nibName: "CharacterTableViewCell", bundle: .main), forCellReuseIdentifier: "characterCell")
+    }
     
 }
-//extension CharactersVC: IndicatorInfoProvider  {
-//    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-//        return itemInfo
-//        
-//    }
-//}
+extension CharactersVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as! CharacterTableViewCell
+        return cell
+    }
+    
+    
+}

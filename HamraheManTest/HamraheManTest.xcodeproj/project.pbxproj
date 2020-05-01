@@ -13,7 +13,6 @@
 		932CF220245AA6DF00B8A38F /* JResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF21F245AA6DF00B8A38F /* JResponse.swift */; };
 		932CF223245AAD1100B8A38F /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF222245AAD1100B8A38F /* EncodableExtension.swift */; };
 		932CF225245AB45900B8A38F /* JInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF224245AB45900B8A38F /* JInfo.swift */; };
-		932CF228245AB79200B8A38F /* MyBBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF227245AB79200B8A38F /* MyBBViewController.swift */; };
 		932CF22B245AB7CA00B8A38F /* HamrahTestColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF22A245AB7CA00B8A38F /* HamrahTestColors.swift */; };
 		932CF22E245AB8FD00B8A38F /* CharacterMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF22D245AB8FD00B8A38F /* CharacterMainVC.swift */; };
 		932CF231245B145800B8A38F /* CharactersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF230245B145800B8A38F /* CharactersVC.swift */; };
@@ -43,6 +42,7 @@
 		9358F244245A15D100BF21C9 /* HamraheManTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F243245A15D100BF21C9 /* HamraheManTestTests.swift */; };
 		9358F24F245A15D100BF21C9 /* HamraheManTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F24E245A15D100BF21C9 /* HamraheManTestUITests.swift */; };
 		9358F25E245A1AD800BF21C9 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F25D245A1AD800BF21C9 /* WebService.swift */; };
+		93C35B27245C05D400D0DF65 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B26245C05D400D0DF65 /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 		932CF21F245AA6DF00B8A38F /* JResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JResponse.swift; sourceTree = "<group>"; };
 		932CF222245AAD1100B8A38F /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		932CF224245AB45900B8A38F /* JInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JInfo.swift; sourceTree = "<group>"; };
-		932CF227245AB79200B8A38F /* MyBBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBBViewController.swift; sourceTree = "<group>"; };
 		932CF22A245AB7CA00B8A38F /* HamrahTestColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamrahTestColors.swift; sourceTree = "<group>"; };
 		932CF22D245AB8FD00B8A38F /* CharacterMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMainVC.swift; sourceTree = "<group>"; };
 		932CF230245B145800B8A38F /* CharactersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVC.swift; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		9358F24E245A15D100BF21C9 /* HamraheManTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamraheManTestUITests.swift; sourceTree = "<group>"; };
 		9358F250245A15D100BF21C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9358F25D245A1AD800BF21C9 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		93C35B26245C05D400D0DF65 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		9810EEA9BC849FFCA8A7946C /* Pods-HamraheManTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamraheManTestTests.release.xcconfig"; path = "Target Support Files/Pods-HamraheManTestTests/Pods-HamraheManTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2682A22244578877A38F144 /* Pods-HamraheManTest-HamraheManTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamraheManTest-HamraheManTestUITests.release.xcconfig"; path = "Target Support Files/Pods-HamraheManTest-HamraheManTestUITests/Pods-HamraheManTest-HamraheManTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DCA8F4C869C8FE96EE8EEA66 /* Pods_HamraheManTest_HamraheManTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HamraheManTest_HamraheManTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +171,7 @@
 		932CF226245AB77900B8A38F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				932CF227245AB79200B8A38F /* MyBBViewController.swift */,
+				93C35B26245C05D400D0DF65 /* MyView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -575,6 +575,7 @@
 				932CF23E245B173600B8A38F /* FavoritesVM.swift in Sources */,
 				932CF22E245AB8FD00B8A38F /* CharacterMainVC.swift in Sources */,
 				932CF242245B188C00B8A38F /* CharacterTableViewCell.swift in Sources */,
+				93C35B27245C05D400D0DF65 /* MyView.swift in Sources */,
 				932CF253245B191D00B8A38F /* Storable.swift in Sources */,
 				932CF255245B191D00B8A38F /* MemoryWarehouse.swift in Sources */,
 				932CF256245B191D00B8A38F /* JSONWarehouse.swift in Sources */,
@@ -582,7 +583,6 @@
 				932CF225245AB45900B8A38F /* JInfo.swift in Sources */,
 				9358F22D245A15CC00BF21C9 /* AppDelegate.swift in Sources */,
 				932CF233245B147300B8A38F /* CharactersVM.swift in Sources */,
-				932CF228245AB79200B8A38F /* MyBBViewController.swift in Sources */,
 				932CF25B245B1E9800B8A38F /* Storyboards.swift in Sources */,
 				932CF254245B191D00B8A38F /* Mirror+Serialization.swift in Sources */,
 				932CF259245B193600B8A38F /* StoringData.swift in Sources */,

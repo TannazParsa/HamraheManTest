@@ -11,13 +11,16 @@ import UIKit
 
 class FavoritesVC: UIViewController {
     
-   // var itemInfo = IndicatorInfo(title: "Favorites")
+    @IBOutlet weak var tableView: UITableView!
     
 }
-//extension FavoritesVC: IndicatorInfoProvider {
-//    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-//        return itemInfo
-//    }
-//    
-//    
-//}
+extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        return cell
+    }
+}
