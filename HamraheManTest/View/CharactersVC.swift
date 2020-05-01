@@ -82,6 +82,7 @@ extension CharactersVC: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+// MARK: Cell handler Delegate
 extension CharactersVC: CellHandlerDelegate {
     func changeHeightTo() {
         self.tableView.beginUpdates()

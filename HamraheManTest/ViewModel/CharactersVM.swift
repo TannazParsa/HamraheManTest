@@ -52,13 +52,6 @@ class CharactersVM {
         }
     }
     
-    func run( after seconds: Int, completion: @escaping () -> Void) {
-        let  deadLine = DispatchTime.now() + .seconds(seconds)
-        DispatchQueue.main.asyncAfter(deadline: deadLine) {
-            completion()
-        }
-    }
-    
     func requestToGetEpisode() {
         var episodes = [JResEpispde]()
         for i in 0...self.characters.count - 1 {
