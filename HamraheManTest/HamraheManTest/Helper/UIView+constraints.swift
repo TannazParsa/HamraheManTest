@@ -105,5 +105,37 @@ extension UIView {
       leadingContraint,
       trailingContraint])
   }
+    
+    func lock() {
+        if let _ = viewWithTag(10) {
+            //View is already locked
+        }
+        else {
+            let lockView = UIView()
+            lockView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
+            lockView.tag = 10
+            lockView.alpha = 0.0
+            addSubview(lockView)
+           var activity = UIActivityIndicatorView()
+           activity = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.white)
+            activity.hidesWhenStopped = true
+            activity.center = lockView.center
+            lockView.addSubview(activity)
+            activity.startAnimating()
+            UIView.animate(withDuration: 0.2) {
+                lockView.alpha = 1.0
+            }
+        }
+    }
+    
+    func unlock() {
+        if let lockView = viewWithTag(10) {
+            UIView.animate(withDuration: 0.2, animations: {
+                lockView.alpha = 0.0
+            }) { finished in
+                lockView.removeFromSuperview()
+            }
+        }
+    }
   
 }

@@ -143,6 +143,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgFAvorites" destination="Z1u-Vu-P3X" id="S0L-EN-OLC"/>
+                <outlet property="lblEpisodes" destination="s0I-m0-wmy" id="Nvl-vh-xSn"/>
+                <outlet property="lblGender" destination="8pv-mP-8pW" id="GpC-7O-8bn"/>
+                <outlet property="lblLocation" destination="uuF-QR-bgb" id="sc7-8b-0kf"/>
+                <outlet property="lblName" destination="rqX-Pi-YSm" id="o0o-i4-spP"/>
+                <outlet property="lblOrigin" destination="0Le-jJ-N5K" id="cu3-qK-x3n"/>
+                <outlet property="lblSpecies" destination="zd1-bH-y1g" id="0do-xi-WTa"/>
+                <outlet property="lblStatus" destination="SOA-dh-enF" id="FOa-DW-l8m"/>
+                <outlet property="lblType" destination="bbe-MC-te6" id="rYb-yV-zoY"/>
+            </connections>
             <point key="canvasLocation" x="187.68115942028987" y="106.13839285714285"/>
         </tableViewCell>
     </objects>

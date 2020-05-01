@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct JResponse {
+struct JArrayResponse {
     
     var info : Codable?
     var result : [Codable]?
@@ -26,5 +26,19 @@ struct JResponse {
         if let info = dictionary["info"] as? NSDictionary {
             self.info = try! JInfo.init(dic: info)
         }
+    }
+    
+    static var notConnected: JArrayResponse {
+        return try! JArrayResponse([
+            "status_code": -1,
+            "message": ""
+            ])
+    }
+    
+    static var noResponse: JArrayResponse {
+        return try! JArrayResponse([
+            "status_code": 0,
+            "message": ""
+            ])
     }
 }

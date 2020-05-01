@@ -10,7 +10,7 @@
 		3E145200657D41B50756C677 /* Pods_HamraheManTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7694647AF51B1BC1699BF689 /* Pods_HamraheManTest.framework */; };
 		3F4E772D7F5D601DDDAB253B /* Pods_HamraheManTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263F7CB920A45414ECC319E1 /* Pods_HamraheManTestTests.framework */; };
 		47F118167D8DE1776A672A3C /* Pods_HamraheManTest_HamraheManTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8F4C869C8FE96EE8EEA66 /* Pods_HamraheManTest_HamraheManTestUITests.framework */; };
-		932CF220245AA6DF00B8A38F /* JResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF21F245AA6DF00B8A38F /* JResponse.swift */; };
+		932CF220245AA6DF00B8A38F /* JArrayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF21F245AA6DF00B8A38F /* JArrayResponse.swift */; };
 		932CF223245AAD1100B8A38F /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF222245AAD1100B8A38F /* EncodableExtension.swift */; };
 		932CF225245AB45900B8A38F /* JInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF224245AB45900B8A38F /* JInfo.swift */; };
 		932CF22B245AB7CA00B8A38F /* HamrahTestColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CF22A245AB7CA00B8A38F /* HamrahTestColors.swift */; };
@@ -43,6 +43,14 @@
 		9358F24F245A15D100BF21C9 /* HamraheManTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F24E245A15D100BF21C9 /* HamraheManTestUITests.swift */; };
 		9358F25E245A1AD800BF21C9 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F25D245A1AD800BF21C9 /* WebService.swift */; };
 		93C35B27245C05D400D0DF65 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B26245C05D400D0DF65 /* MyView.swift */; };
+		93C35B29245C426500D0DF65 /* WSCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B28245C426500D0DF65 /* WSCharacter.swift */; };
+		93C35B2B245C445F00D0DF65 /* JCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B2A245C445F00D0DF65 /* JCharacter.swift */; };
+		93C35B2D245C44D500D0DF65 /* JOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B2C245C44D500D0DF65 /* JOrigin.swift */; };
+		93C35B2F245C6FF200D0DF65 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B2E245C6FF200D0DF65 /* MainVC.swift */; };
+		93C35B31245C7A4400D0DF65 /* WSEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B30245C7A4400D0DF65 /* WSEpisode.swift */; };
+		93C35B33245C7F3400D0DF65 /* JEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B32245C7F3400D0DF65 /* JEpisode.swift */; };
+		93C35B37245C8A0300D0DF65 /* JResEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B36245C8A0300D0DF65 /* JResEpisode.swift */; };
+		93C35B39245CD72B00D0DF65 /* CharacterVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C35B38245CD72B00D0DF65 /* CharacterVCTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +76,7 @@
 		7643344E491D1E6AAF081A30 /* Pods-HamraheManTest-HamraheManTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamraheManTest-HamraheManTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-HamraheManTest-HamraheManTestUITests/Pods-HamraheManTest-HamraheManTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7694647AF51B1BC1699BF689 /* Pods_HamraheManTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HamraheManTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFCEB7481C1426068F6DFB8 /* Pods-HamraheManTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamraheManTestTests.debug.xcconfig"; path = "Target Support Files/Pods-HamraheManTestTests/Pods-HamraheManTestTests.debug.xcconfig"; sourceTree = "<group>"; };
-		932CF21F245AA6DF00B8A38F /* JResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JResponse.swift; sourceTree = "<group>"; };
+		932CF21F245AA6DF00B8A38F /* JArrayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JArrayResponse.swift; sourceTree = "<group>"; };
 		932CF222245AAD1100B8A38F /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		932CF224245AB45900B8A38F /* JInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JInfo.swift; sourceTree = "<group>"; };
 		932CF22A245AB7CA00B8A38F /* HamrahTestColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamrahTestColors.swift; sourceTree = "<group>"; };
@@ -107,6 +115,14 @@
 		9358F250245A15D100BF21C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9358F25D245A1AD800BF21C9 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		93C35B26245C05D400D0DF65 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		93C35B28245C426500D0DF65 /* WSCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCharacter.swift; sourceTree = "<group>"; };
+		93C35B2A245C445F00D0DF65 /* JCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCharacter.swift; sourceTree = "<group>"; };
+		93C35B2C245C44D500D0DF65 /* JOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JOrigin.swift; sourceTree = "<group>"; };
+		93C35B2E245C6FF200D0DF65 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		93C35B30245C7A4400D0DF65 /* WSEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEpisode.swift; sourceTree = "<group>"; };
+		93C35B32245C7F3400D0DF65 /* JEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JEpisode.swift; sourceTree = "<group>"; };
+		93C35B36245C8A0300D0DF65 /* JResEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JResEpisode.swift; sourceTree = "<group>"; };
+		93C35B38245CD72B00D0DF65 /* CharacterVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVCTest.swift; sourceTree = "<group>"; };
 		9810EEA9BC849FFCA8A7946C /* Pods-HamraheManTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamraheManTestTests.release.xcconfig"; path = "Target Support Files/Pods-HamraheManTestTests/Pods-HamraheManTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2682A22244578877A38F144 /* Pods-HamraheManTest-HamraheManTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamraheManTest-HamraheManTestUITests.release.xcconfig"; path = "Target Support Files/Pods-HamraheManTest-HamraheManTestUITests/Pods-HamraheManTest-HamraheManTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DCA8F4C869C8FE96EE8EEA66 /* Pods_HamraheManTest_HamraheManTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HamraheManTest_HamraheManTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,8 +160,12 @@
 		932CF21D245AA67800B8A38F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				932CF21F245AA6DF00B8A38F /* JResponse.swift */,
+				932CF21F245AA6DF00B8A38F /* JArrayResponse.swift */,
 				932CF224245AB45900B8A38F /* JInfo.swift */,
+				93C35B2A245C445F00D0DF65 /* JCharacter.swift */,
+				93C35B2C245C44D500D0DF65 /* JOrigin.swift */,
+				93C35B32245C7F3400D0DF65 /* JEpisode.swift */,
+				93C35B36245C8A0300D0DF65 /* JResEpisode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				93C35B26245C05D400D0DF65 /* MyView.swift */,
+				93C35B2E245C6FF200D0DF65 /* MainVC.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -287,6 +308,7 @@
 			children = (
 				9358F243245A15D100BF21C9 /* HamraheManTestTests.swift */,
 				9358F245245A15D100BF21C9 /* Info.plist */,
+				93C35B38245CD72B00D0DF65 /* CharacterVCTest.swift */,
 			);
 			path = HamraheManTestTests;
 			sourceTree = "<group>";
@@ -304,6 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				9358F25D245A1AD800BF21C9 /* WebService.swift */,
+				93C35B28245C426500D0DF65 /* WSCharacter.swift */,
+				93C35B30245C7A4400D0DF65 /* WSEpisode.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -573,31 +597,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				932CF23E245B173600B8A38F /* FavoritesVM.swift in Sources */,
+				93C35B2F245C6FF200D0DF65 /* MainVC.swift in Sources */,
 				932CF22E245AB8FD00B8A38F /* CharacterMainVC.swift in Sources */,
 				932CF242245B188C00B8A38F /* CharacterTableViewCell.swift in Sources */,
 				93C35B27245C05D400D0DF65 /* MyView.swift in Sources */,
+				93C35B37245C8A0300D0DF65 /* JResEpisode.swift in Sources */,
 				932CF253245B191D00B8A38F /* Storable.swift in Sources */,
 				932CF255245B191D00B8A38F /* MemoryWarehouse.swift in Sources */,
 				932CF256245B191D00B8A38F /* JSONWarehouse.swift in Sources */,
 				932CF23C245B171500B8A38F /* URLs.swift in Sources */,
 				932CF225245AB45900B8A38F /* JInfo.swift in Sources */,
 				9358F22D245A15CC00BF21C9 /* AppDelegate.swift in Sources */,
+				93C35B2B245C445F00D0DF65 /* JCharacter.swift in Sources */,
 				932CF233245B147300B8A38F /* CharactersVM.swift in Sources */,
 				932CF25B245B1E9800B8A38F /* Storyboards.swift in Sources */,
 				932CF254245B191D00B8A38F /* Mirror+Serialization.swift in Sources */,
 				932CF259245B193600B8A38F /* StoringData.swift in Sources */,
 				932CF257245B191D00B8A38F /* Pantry.swift in Sources */,
 				9358F25E245A1AD800BF21C9 /* WebService.swift in Sources */,
+				93C35B2D245C44D500D0DF65 /* JOrigin.swift in Sources */,
 				932CF246245B18B000B8A38F /* FavoriteTableViewCell.swift in Sources */,
 				932CF22B245AB7CA00B8A38F /* HamrahTestColors.swift in Sources */,
+				93C35B31245C7A4400D0DF65 /* WSEpisode.swift in Sources */,
 				932CF231245B145800B8A38F /* CharactersVC.swift in Sources */,
 				9339FC93245B7D2A00EAFCB7 /* UIView+constraints.swift in Sources */,
 				932CF238245B164F00B8A38F /* FavoritesVC.swift in Sources */,
 				9358F22F245A15CC00BF21C9 /* SceneDelegate.swift in Sources */,
+				93C35B29245C426500D0DF65 /* WSCharacter.swift in Sources */,
 				932CF252245B191D00B8A38F /* WarehouseCacheable.swift in Sources */,
+				93C35B33245C7F3400D0DF65 /* JEpisode.swift in Sources */,
 				932CF251245B191D00B8A38F /* Warehousable.swift in Sources */,
 				932CF223245AAD1100B8A38F /* EncodableExtension.swift in Sources */,
-				932CF220245AA6DF00B8A38F /* JResponse.swift in Sources */,
+				932CF220245AA6DF00B8A38F /* JArrayResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C35B39245CD72B00D0DF65 /* CharacterVCTest.swift in Sources */,
 				9358F244245A15D100BF21C9 /* HamraheManTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

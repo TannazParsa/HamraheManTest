@@ -67,6 +67,9 @@
                                                     <constraint firstAttribute="height" constant="35" id="V52-Ed-vbP"/>
                                                 </constraints>
                                                 <state key="normal" image="down-arrow"/>
+                                                <connections>
+                                                    <action selector="btnArrowDownPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IWY-mh-TEt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzV-qz-MRi">
                                                 <rect key="frame" x="288" y="8" width="35" height="35"/>
@@ -75,6 +78,9 @@
                                                     <constraint firstAttribute="width" constant="35" id="v12-Dx-LCE"/>
                                                 </constraints>
                                                 <state key="normal" image="rates"/>
+                                                <connections>
+                                                    <action selector="btnStarPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iUV-TR-r5O"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -127,6 +133,9 @@
                                                     <constraint firstAttribute="height" constant="35" id="kKA-oK-KaY"/>
                                                 </constraints>
                                                 <state key="normal" image="up-arrow"/>
+                                                <connections>
+                                                    <action selector="btnArrowUpPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4AI-2C-wVM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -135,7 +144,6 @@
                                             <constraint firstAttribute="trailing" secondItem="SKU-kV-JBc" secondAttribute="trailing" constant="11" id="D6M-7i-04P"/>
                                             <constraint firstItem="Wor-Xx-4fU" firstAttribute="leading" secondItem="Jp1-Uk-MJp" secondAttribute="leading" id="IGP-CE-mlk"/>
                                             <constraint firstAttribute="trailing" secondItem="Wor-Xx-4fU" secondAttribute="trailing" constant="8" id="RnD-cH-dpE"/>
-                                            <constraint firstAttribute="height" constant="97" id="WVH-EA-d2G"/>
                                             <constraint firstItem="SKU-kV-JBc" firstAttribute="top" secondItem="Wor-Xx-4fU" secondAttribute="bottom" id="t3G-aO-EGh"/>
                                         </constraints>
                                     </view>
@@ -180,6 +188,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnArrowDown" destination="ctc-Ox-ggV" id="xNf-KM-ldO"/>
+                <outlet property="btnArrowUp" destination="SKU-kV-JBc" id="P6t-RM-Tje"/>
+                <outlet property="btnStar" destination="HzV-qz-MRi" id="vXE-ys-0iB"/>
+                <outlet property="imgCharacter" destination="CbF-I9-yAf" id="dBm-2g-SHL"/>
+                <outlet property="lblEpisode" destination="Wor-Xx-4fU" id="SoO-sQ-wgT"/>
+                <outlet property="lblName" destination="Vzc-md-Tjg" id="EpP-GG-3EU"/>
+                <outlet property="lblSpecied" destination="iXi-a8-ajo" id="w6A-J2-28T"/>
+                <outlet property="lblStatus" destination="yWD-Tx-5R9" id="eq6-RJ-QPt"/>
+                <outlet property="mainView" destination="qoi-gP-W57" id="TyT-mG-RWm"/>
+            </connections>
             <point key="canvasLocation" x="183.33333333333334" y="173.10267857142856"/>
         </tableViewCell>
     </objects>

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FavoritesVC: UIViewController {
+class FavoritesVC: MainVC {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -17,14 +17,21 @@ class FavoritesVC: UIViewController {
         tableView.register(UINib(nibName: "FavoriteTableViewCell", bundle: .main), forCellReuseIdentifier: "favoriteCell")
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
 }
 extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return StoringData.favorites?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath) as! FavoriteTableViewCell
+        if let episodes = StoringData.favorites {
+            cell.config(episodes[indexPath.row])
+        }
         return cell
     }
 }

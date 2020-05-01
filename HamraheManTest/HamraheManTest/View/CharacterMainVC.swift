@@ -11,14 +11,12 @@ import Parchment
 
 import UIKit
 
-class CharacterMainVC: UIViewController {
+class CharacterMainVC: MainVC {
     
     @IBOutlet weak var vwMain: UIView!
-    var startTab = 0
         override func viewDidLoad() {
             let characterVC = Storyboards.main.instantiateViewController(withIdentifier: "charactersVC") as! CharactersVC
             characterVC.title = "Characters"
-            characterVC.view.backgroundColor = .gray
             let favoritesVC = Storyboards.main.instantiateViewController(withIdentifier: "favoritesVC") as! FavoritesVC
             favoritesVC.title = "Favorites"
             let pagingViewController = PagingViewController(viewControllers: [
@@ -26,11 +24,8 @@ class CharacterMainVC: UIViewController {
               favoritesVC
             ])
             
-            pagingViewController.delegate = self
             pagingViewController.includeSafeAreaInsets = true
-            //pagingViewController.sizeDelegate = self
-            pagingViewController.textColor = .red
-           // pagingViewController.te
+            pagingViewController.textColor = .darkGray
             pagingViewController.reloadMenu()
             addChild(pagingViewController)
             vwMain.addSubview(pagingViewController.view)
@@ -38,12 +33,6 @@ class CharacterMainVC: UIViewController {
             pagingViewController.didMove(toParent: self)
 
        }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
 }
-extension CharacterMainVC: PagingViewControllerDelegate {
-    
-}
+
 

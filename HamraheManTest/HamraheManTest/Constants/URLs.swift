@@ -11,6 +11,8 @@ import UIKit
 
 struct URLs {
     
-    static let baseURL                  = "https://rickandmortyapi.com/api/character/"
+    static let baseURL                  = "https://rickandmortyapi.com/api/"
+    static let character                = "\(baseURL)character/"
+    
     
 }

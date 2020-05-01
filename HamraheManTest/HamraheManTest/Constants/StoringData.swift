@@ -12,4 +12,17 @@ import CoreLocation
 
 
 class StoringData {
+    
+    static var favorites : [JCharacter]? {
+           set {
+               if let newValue = newValue {
+                   Pantry.pack(newValue , key: "characters")
+               } else {
+                   Pantry.expire("characters")
+               }
+           }
+           get {
+               return  Pantry.unpack("characters")
+           }
+       }
 }

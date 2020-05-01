@@ -1,17 +1,23 @@
 PODS:
   - Alamofire (4.9.1)
+  - Kingfisher (4.10.1)
   - Parchment (2.3.0)
   - ReachabilitySwift (4.0-beta1)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Kingfisher (~> 4.0)
   - Parchment
   - ReachabilitySwift (from `https://github.com/ashleymills/Reachability.swift`, branch `develop`)
+  - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - Parchment
+    - SnapKit
 
 EXTERNAL SOURCES:
   ReachabilitySwift:
@@ -25,9 +31,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Parchment: 72a7eb8072454a9500a53dd84776e04fba24e740
   ReachabilitySwift: fa4416f5356466392a733d21b41873ebe052bf40
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 1979b9a171b292d2b3e2c3f83728bed3a919d162
+PODFILE CHECKSUM: 6ac7ebda0213088b9c9211437ae8719c3a78ba84
 
 COCOAPODS: 1.8.4
