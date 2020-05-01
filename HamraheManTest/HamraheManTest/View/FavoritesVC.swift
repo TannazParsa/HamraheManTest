@@ -13,6 +13,10 @@ class FavoritesVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    override func viewDidLoad() {
+        tableView.register(UINib(nibName: "FavoriteTableViewCell", bundle: .main), forCellReuseIdentifier: "favoriteCell")
+    }
+    
 }
 extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,7 +24,7 @@ extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath) as! FavoriteTableViewCell
         return cell
     }
 }
